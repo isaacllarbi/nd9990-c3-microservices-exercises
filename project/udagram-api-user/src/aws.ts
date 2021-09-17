@@ -20,7 +20,7 @@ export function getGetSignedUrl( key: string ): string {
     Key: key,
     Expires: signedUrlExpireSeconds,
   });
-}
+} 
 
 // Generates an AWS signed URL for uploading objects
 export function getPutSignedUrl( key: string ): string {
