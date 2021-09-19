@@ -15,9 +15,9 @@ spec:
         app: reverseproxy
     spec:
       containers:
-      - image: isaacllarbi/reverseproxy:v1
+      - image: isaacllarbi/reverseproxy:v1.1
         name: reverseproxy
-        imagePullPolicy: Never          
+        imagePullPolicy: Always          
         resources:
           requests:
             memory: "64Mi"
