@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-1
+  labels:
+    app: web-1
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: web-1
+  template:
+    metadata:
+      labels:
+        app: web-1
+    spec:
+      containers:
+      - image: httpd:latest
+        name: web-1
